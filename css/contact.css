@@ -61,9 +61,10 @@ textarea {
     margin: 10px auto;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
   .campo {
     width: 100%;
+    margin: 10px auto;
   }
 }
 @media (min-width: 992px) {

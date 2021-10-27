@@ -47,7 +47,7 @@
 /* media queries */
 @media (max-width: 768px) {
   #projects>div>div {
-    width: 80%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
@@ -57,6 +57,6 @@
 }
 @media (min-width: 992px) {
   #projects>div>div {
-    width: 30%;
+    width: 20%;
   }
 }
