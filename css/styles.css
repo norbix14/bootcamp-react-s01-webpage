@@ -1,0 +1,38 @@
+/* generales */
+a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  transition: all .2s ease;
+}
+
+a:hover {
+  color: #fff;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2 {
+  margin: 50px auto;
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+/* secciones */
+section {
+  width: 80%;
+  margin: 30px auto;
+  min-height: 250px;
+  border-bottom: 1px solid #fff;
+}
+
+/* media queries */
+@media (max-width: 768px) {}
+@media (min-width: 768px) {}
+@media (min-width: 992px) {}

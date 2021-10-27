@@ -1,0 +1,73 @@
+/* contacto */
+form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.campo-textarea {
+  display: block;
+  width: 100%;
+  padding: .5px;
+  margin-top: 10px;
+}
+
+input,
+textarea,
+button {
+  font-size: 18px;
+  height: 24px;
+  padding: 5px;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #fff;
+  width: 100%;
+  border-radius: 0;
+}
+
+input:focus-visible, 
+textarea:focus-visible {
+  outline: 2px solid #fff;
+  border-radius: 0;
+}
+
+textarea {
+ min-height: 200px;
+}
+
+.boton {
+  margin:auto;
+  margin-top: 20px;
+}
+
+.boton>button {
+  margin:auto;
+  height: 50px;
+  min-width: 100px;
+}
+
+.boton>button:hover {
+  outline: 2px solid #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255, .1);
+}
+
+/* media queries */
+@media (max-width: 768px) {
+  .campo {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+@media (min-width: 768px) {
+  .campo {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .campo {
+    width: 32%;
+  }
+}

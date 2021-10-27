@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- FontAwesome Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<!-- css -->
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/projects.css">
+	<link rel="stylesheet" href="css/cards.css">
+	<link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Landing page</title>
+</head>
+<body>
+	<div class="contenedor">
+		<!-- nav -->
+		<header class="header">
+			<nav class="navegacion">
+				<ul>
+					<li>
+						<a href="index.html">
+							<img src="img/logo.png" alt="logo">
+						</a>
+					</li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="home">
+				<img src="img/code.jpg" alt="Homepage">
+			</div>
+		</header>
+		<!-- about -->
+		<section class="nosotros" id="about">
+			<h2>Sobre nosotros</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis dolores aut doloribus at doloremque voluptas vel quae omnis consectetur, nobis obcaecati dolor fugit ex quas dignissimos praesentium autem nemo!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis dolores aut doloribus at doloremque voluptas vel quae omnis consectetur, nobis obcaecati dolor fugit ex quas dignissimos praesentium autem nemo!</p>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis perspiciatis dolores aut doloribus at doloremque voluptas vel quae omnis consectetur, nobis obcaecati dolor fugit ex quas dignissimos praesentium autem nemo!</p>
+		</section>
+		<!-- projects -->
+		<section class="proyectos" id="projects">
+			<h2>Proyectos</h2>
+			<div>
+				<div class="project" style="background-image: url('img/projects/project-1.jpg');">
+					<div class="desc">
+						<h5>Project #1</h5>
+						<a href="#">Ver más</a>
+					</div>
+				</div>
+				<div class="project" style="background-image: url('img/projects/project-2.jpg');">
+					<div class="desc">
+						<h5>Project #2</h5>
+						<a href="#">Ver más</a>
+					</div>
+				</div>
+				<div class="project" style="background-image: url('img/projects/project-3.jpg');">
+					<div class="desc">
+						<h5>Project #3</h5>
+						<a href="#">Ver más</a>
+					</div>
+				</div>
+				<div class="project" style="background-image: url('img/projects/project-4.jpg');">
+					<div class="desc">
+						<h5>Project #4</h5>
+						<a href="#">Ver más</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- cards -->
+		<section class="tarjetas" id="cards">
+			<h2>Cards</h2>
+			<div class="cards-box">
+				<div class="card">
+					<div class="card-header">
+						<img src="img/projects/project-1.jpg" alt="Proyecto">
+					</div>
+					<div class="card-body">
+						<h2>#1</h2>
+					</div>
+					<div class="card-footer">
+						<p>Próximamente</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<img src="img/projects/project-2.jpg" alt="Proyecto">
+					</div>
+					<div class="card-body">
+						<h2>#2</h2>
+					</div>
+					<div class="card-footer">
+						<p>Próximamente</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<img src="img/projects/project-3.jpg" alt="Proyecto">
+					</div>
+					<div class="card-body">
+						<h2>#3</h2>
+					</div>
+					<div class="card-footer">
+						<p>Próximamente</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						<img src="img/projects/project-4.jpg" alt="Proyecto">
+					</div>
+					<div class="card-body">
+						<h2>#4</h2>
+					</div>
+					<div class="card-footer">
+						<p>Próximamente</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- form contact -->
+		<section class="contacto" id="contact">
+			<h2>Contáctanos</h2>
+			<form class="formulario" id="queryform" autocomplete="off">
+				<div class="campo">
+					<input class="input" type="text" placeholder="Nombre" required id="username">
+				</div>
+				<div class="campo">
+					<input class="input" type="text" placeholder="Apellido" required id="userlastname">
+				</div>
+				<div class="campo">
+					<input class="input" type="email" placeholder="Email" required id="useremail">
+				</div>
+				<div class="campo-textarea">
+					<textarea class="textarea" name="consulta" id="userquery" cols="30" rows="10" placeholder="Tu consulta" required></textarea>
+				</div>
+				<div class="boton">
+					<button type="submit" id="sendform">Enviar consulta</button>
+				</div>
+			</form>
+		</section>
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<div>
+				<ul class="footer-list">
+					<li> Norberto Fabrizio</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-instagram"></i> Instagram
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-facebook"></i> Facebook
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-twitter"></i> Twitter
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-linkedin"></i> Linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="footer-list">
+					<li> Empresa X 2021 &copy;</li>
+					<li> 
+						<a href="#home"> 
+							<i class="fas fa-home"></i> Home
+						</a>
+					</li>
+					<li> 
+						<a href="#about"> 
+							<i class="fas fa-user"></i> About
+						</a>
+					</li>
+					<li> 
+						<a href="#projects"> 
+							<i class="fas fa-tasks"></i> Projects
+						</a>
+					</li>
+					<li> 
+						<a href="#contact"> 
+							<i class="fas fa-address-card"></i> Contact
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<ul class="footer-list">
+					<li> Pablo Nader</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-instagram"></i> Instagram
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-facebook"></i> Facebook
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-twitter"></i> Twitter
+						</a>
+					</li>
+					<li> 
+						<a href="#"> 
+							<i class="fab fa-linkedin"></i> Linkedin
+						</a>
+					</li>
+				</ul>
+			</div>
+		</footer>
+	</div>
+	<!-- js -->
+	<script src="js/main.js"></script>
+</body>
+</html>
