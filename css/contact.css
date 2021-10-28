@@ -1,5 +1,5 @@
 /* contacto */
-form {
+.formulario {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -13,45 +13,44 @@ form {
   margin-top: 10px;
 }
 
-input,
-textarea,
-button {
-  font-size: 18px;
+.campo-enviar {
+  margin: 10px auto 0 auto;
+}
+
+.query-input,
+.query-textarea {
+  padding: 15px;
   height: 24px;
-  padding: 5px;
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
   width: 100%;
-  border-radius: 0;
 }
 
-input:focus-visible, 
-textarea:focus-visible {
+.query-input:focus-visible, 
+.query-textarea:focus-visible {
   outline: 2px solid #fff;
   border-radius: 0;
 }
 
-textarea {
- min-height: 200px;
+.query-textarea {
+  min-height: 200px;
 }
 
-.boton {
-  margin:auto;
-  margin-top: 20px;
-}
-
-.boton>button {
-  margin:auto;
+.btn-consulta {
+  margin: auto;
   height: 50px;
   min-width: 100px;
+  padding: 10px;
+  transition: all .3s ease;
+  color: #fff;
+  background-color: transparent;
 }
 
-.boton>button:hover {
-  outline: 2px solid #fff;
-  font-weight: bold;
+.btn-consulta:hover {
   cursor: pointer;
-  background-color: rgb(255, 255, 255, .1);
+  color: #fff;
+  background-color: orangered;
 }
 
 /* media queries */

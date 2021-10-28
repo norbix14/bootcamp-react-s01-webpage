@@ -1,7 +1,5 @@
 /* home */
-.home {
-  opacity: 30%;
-}
+.home {}
 
 /* media queries */
 @media (max-width: 768px) {}

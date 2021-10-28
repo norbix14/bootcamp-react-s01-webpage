@@ -18,7 +18,7 @@
 </head>
 <body>
 	<div class="contenedor">
-		<!-- nav -->
+		<!-- header -->
 		<header class="header">
 			<nav class="navegacion">
 				<ul>
@@ -27,14 +27,21 @@
 							<img src="img/logo.png" alt="logo">
 						</a>
 					</li>
-					<li><a href="index.html">Home</a></li>
+					<li><a href="#home">Home</a></li>
 					<li><a href="#about">About</a></li>
 					<li><a href="#projects">Projects</a></li>
+					<li><a href="#cards">Cards</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
-			<div class="home">
-				<img src="img/code.jpg" alt="Homepage">
+			<div class="home" id="home">
+				<div class="jumbotron"></div>
+				<div class="suscripcion">
+					<form class="formulario-suscripcion" id="subscriptionform" autocomplete="off">
+						<input class="input-suscripcion" type="email" id="email-suscripcion" placeholder="Email" required>
+						<button class="btn-suscripcion" type="submit" id="suscribirse">Suscribirme</button>
+					</form>
+				</div>
 			</div>
 		</header>
 		<!-- about -->
@@ -76,7 +83,7 @@
 		</section>
 		<!-- cards -->
 		<section class="tarjetas" id="cards">
-			<h2>Cards</h2>
+			<h2>Tarjetas</h2>
 			<div class="cards-box">
 				<div class="card">
 					<div class="card-header">
@@ -129,25 +136,25 @@
 			<h2>Contáctanos</h2>
 			<form class="formulario" id="queryform" autocomplete="off">
 				<div class="campo">
-					<input class="input" type="text" placeholder="Nombre" required id="username">
+					<input class="query-input" type="text" placeholder="Nombre" required id="username">
 				</div>
 				<div class="campo">
-					<input class="input" type="text" placeholder="Apellido" required id="userlastname">
+					<input class="query-input" type="text" placeholder="Apellido" required id="userlastname">
 				</div>
 				<div class="campo">
-					<input class="input" type="email" placeholder="Email" required id="useremail">
+					<input class="query-input" type="email" placeholder="Email" required id="useremail">
 				</div>
 				<div class="campo-textarea">
-					<textarea class="textarea" name="consulta" id="userquery" cols="30" rows="10" placeholder="Tu consulta" required></textarea>
+					<textarea class="query-textarea" name="consulta" id="userquery" cols="30" rows="10" placeholder="Tu consulta" required></textarea>
 				</div>
-				<div class="boton">
-					<button type="submit" id="sendform">Enviar consulta</button>
+				<div class="campo-enviar">
+					<button class="btn-consulta" type="submit" id="sendform">Enviar consulta</button>
 				</div>
 			</form>
 		</section>
 		<!-- footer -->
 		<footer class="footer" id="footer">
-			<div>
+			<div class="company-info">
 				<ul class="footer-list">
 					<li> Norberto Fabrizio</li>
 					<li> 
@@ -172,7 +179,7 @@
 					</li>
 				</ul>
 			</div>
-			<div>
+			<div class="company-info">
 				<ul class="footer-list">
 					<li> Empresa X 2021 &copy;</li>
 					<li> 
@@ -197,7 +204,7 @@
 					</li>
 				</ul>
 			</div>
-			<div>
+			<div class="company-info">
 				<ul class="footer-list">
 					<li> Pablo Nader</li>
 					<li> 

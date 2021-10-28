@@ -11,7 +11,7 @@
 
 <br>
 
-![Header](screenshots/home.png "Header")
+![Header](screenshots/home.png "Header con opción de suscripción")
 
 ![Proyectos](screenshots/projects.png "Proyectos")
 

@@ -4,7 +4,7 @@
   justify-content: space-evenly;
   font-size: 1rem;
   font-style: italic;
-  text-align: center;
+  /*text-align: center;*/
   margin-bottom: 20px;
 }
 
@@ -21,7 +21,6 @@
 
 .footer-list>li {
   line-height: 24px;
-  text-indent: 20px;
 }
 
 .footer-list>li:first-child {
@@ -34,6 +33,10 @@
 .footer-list>li>a {
   font-weight: normal;
   color: #ccc;
+}
+
+.company-info {
+  margin: 0 auto 10px auto;
 }
 
 /* media queries */
