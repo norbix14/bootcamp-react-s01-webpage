@@ -9,7 +9,6 @@
 .campo-textarea {
   display: block;
   width: 100%;
-  padding: .5px;
   margin-top: 10px;
 }
 
@@ -43,14 +42,14 @@
   min-width: 100px;
   padding: 10px;
   transition: all .3s ease;
-  color: #fff;
-  background-color: transparent;
+  color: #eee;
+  background-color: var(--light-main-color);
 }
 
 .btn-consulta:hover {
   cursor: pointer;
   color: #fff;
-  background-color: orangered;
+  background-color: var(--main-color);
 }
 
 /* media queries */

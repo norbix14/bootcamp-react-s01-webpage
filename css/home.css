@@ -1,5 +1,49 @@
 /* home */
-.home {}
+.home {
+  position: relative;
+}
+
+.jumbotron {
+  background-image: url(../img/code.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 90vh;
+  opacity: 20%;
+}
+
+.suscripcion form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.input-suscripcion {
+  margin: 0 1rem;
+  padding: 10px;
+}
+
+.input-suscripcion:focus-visible {
+  outline: 2px solid var(--light-main-color);
+  border-radius: 0;
+}
+
+.btn-suscripcion {
+  height: auto;
+  color: #eee;
+  background-color: var(--light-main-color);
+  padding: 10px;
+  transition: all .3s ease;
+}
+
+.btn-suscripcion:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: var(--main-color);
+}
 
 /* media queries */
 @media (max-width: 768px) {}

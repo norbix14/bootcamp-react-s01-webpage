@@ -37,16 +37,16 @@ div.project {
 
 .desc>h5 {
   text-align: center;
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   color: #fff;
 }
 
 .desc>a {
-  display: block;
   color: #fff;
+  display: block;
   text-align: center;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 /* media queries */
@@ -55,11 +55,13 @@ div.project {
     width: 100%;
   }
 }
+
 @media (min-width: 768px) {
   #projects>div>div {
     width: 45%;
   }
 }
+
 @media (min-width: 992px) {
   #projects>div>div {
     width: 20%;

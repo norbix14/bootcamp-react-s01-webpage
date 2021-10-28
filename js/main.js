@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSend.innerHTML = 'Enviando...'
         setTimeout(() => {
           btnSend.setAttribute('disabled', 'true')
+          btnSend.setAttribute('title', 'Ya recibimos tu consulta')
           btnSend.innerHTML = '¡Consulta enviada!'
           queryForm.reset()
         }, 3000)
@@ -43,6 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
         btnSend.innerHTML = 'Registrándo...'
         setTimeout(() => {
           btnSend.setAttribute('disabled', 'true')
+          btnSend.setAttribute('title', 'Ya habilitamos tu suscripción')
+          usersubemail.setAttribute('disabled', 'true')
+          usersubemail.style.background = '#fff'
           btnSend.innerHTML = '¡Suscrito!'
           subsForm.reset()
         }, 3000)

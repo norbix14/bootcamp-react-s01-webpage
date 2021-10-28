@@ -4,12 +4,11 @@
   justify-content: space-evenly;
   font-size: 1rem;
   font-style: italic;
-  /*text-align: center;*/
   margin-bottom: 20px;
 }
 
 .footer>p {
-  font-size: 16px;
+  font-size: 1rem;
   font-style: italic;
   text-align: center;
 }
@@ -20,7 +19,7 @@
 }
 
 .footer-list>li {
-  line-height: 24px;
+  line-height: 1.25rem;
 }
 
 .footer-list>li:first-child {
@@ -33,6 +32,11 @@
 .footer-list>li>a {
   font-weight: normal;
   color: #ccc;
+}
+
+.footer-list>li>a:hover {
+  font-weight: normal;
+  color: var(--light-main-color);
 }
 
 .company-info {
@@ -51,6 +55,15 @@
   .footer-list>li:first-child {
     border-bottom: none;
   }
+  .footer-list>li {
+    margin: 15px auto;
+  }
 }
-@media (min-width: 768px) {}
+
+@media (min-width: 768px) {
+  .footer-list>li {
+    margin: 10px auto;
+  }
+}
+
 @media (min-width: 992px) {}
