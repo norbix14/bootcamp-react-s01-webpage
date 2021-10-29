@@ -46,6 +46,17 @@
 }
 
 /* media queries */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 60vh;
+  }
+  .suscripcion form {
+    flex-direction: column;
+  }
+  .btn-suscripcion {
+    margin: 20px auto 0 auto;
+  }
+}
+
 @media (min-width: 768px) {}
 @media (min-width: 992px) {}

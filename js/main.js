@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
+  const validateEmail = email => {
+    const emailRegexp = new RegExp(
+      /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i
+    )
+    return emailRegexp.test(email)
+  }
   if (queryForm) {
     const username = document.querySelector('#username')
     const userlastname = document.querySelector('#userlastname')
@@ -22,6 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
           userquery.value.trim() === '') {
         alert('Los campos no debe quedar vacíos')
       } else {
+        if (!validateEmail(useremail.value)) {
+          return alert('Email inválido')
+        }
         const btnSend = document.querySelector('#sendform')
         btnSend.innerHTML = 'Enviando...'
         setTimeout(() => {
@@ -40,6 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (usersubemail.value.trim() === '') {
         alert('Ingresa tu email para poder suscribirte')
       } else {
+        if (!validateEmail(usersubemail.value)) {
+          return alert('Email inválido')
+        }
         const btnSend = document.querySelector('#suscribirse')
         btnSend.innerHTML = 'Registrándo...'
         setTimeout(() => {
